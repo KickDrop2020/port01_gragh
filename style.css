@@ -1,0 +1,27 @@
+body {
+    background-color: #fff;
+    color: blue;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+canvas {
+    /*max-width: 600px;*/
+    width: 60rem;
+    margin: 20px auto;
+    height: 60rem;
+    background-color: #fff;
+    display: block;
+    border: ridge #ccc;
+    border-width: 6px;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+    color: blue;
+    font-size: 20px;
+}
