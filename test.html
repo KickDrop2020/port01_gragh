@@ -9,6 +9,13 @@
     <body>
         <div class="container">
             <h1>自動集計ツール</h1>
+            <div class="explanation">
+                <p>xlsxファイルを準備/
+                エクセルのセルには"A-1","A-2","A-3","B-1","B-2","B-3","B-4","B-5"いずれかの文字が書かれていて</p>
+                <p>エクセルのシートは"XXX","YYY","ZZZ"の３枚あることを想定している</p>
+                <p>「Y軸の高さの設定」でY軸の表示MAX値を入力後、「ファイルを選択」をクリックしてください</p>
+                <p>※「ファイルを選択」をクリック後「Y軸の高さの設定」を改めたい場合は、1度ブラウザを閉じてください。</p>
+            </div>
             <input type="file" id="fileInput" accept=".xlsx, .xls"/>
             <p>Y軸高さの設定</p>
             <input type="number" id="number1" value="40" />

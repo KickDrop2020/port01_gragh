@@ -8,6 +8,9 @@ body {
 .container {
     margin-top: 50px;
 }
+.explanation {
+    color: black;
+}
 
 canvas {
     /*max-width: 600px;*/
