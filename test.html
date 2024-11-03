@@ -7,24 +7,45 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="container">
-            <h1>自動集計ツール</h1>
-            <div class="explanation">
-                <p>xlsxファイルを準備/
-                エクセルのセルには"A-1","A-2","A-3","B-1","B-2","B-3","B-4","B-5"いずれかの文字が書かれていて</p>
-                <p>エクセルのシートは"XXX","YYY","ZZZ"の３枚あることを想定している</p>
-                <p>「Y軸の高さの設定」でY軸の表示MAX値を入力後、「ファイルを選択」をクリックしてください</p>
-                <p>※「ファイルを選択」をクリック後「Y軸の高さの設定」を改めたい場合は、1度ブラウザを閉じてください。</p>
+        <header>
+            <div class="logo">
+                <h1>自動集計ツール</h1>
             </div>
-            <input type="file" id="fileInput" accept=".xlsx, .xls"/>
-            <p>Y軸高さの設定</p>
-            <input type="number" id="number1" value="40" />
-            <canvas id="myChart1"></canvas>
-            <canvas id="myChart2"></canvas>
-            <canvas id="myChart3"></canvas>
+        </header>
+        <div class="container">
+            <p>エクセルの「XXX」「YYY」「ZZZ」シートそれぞれに"A-1","A-2","A-3","B-1","B-2","B-3","B-4","B-5"の文字がいくつあるかを算出します</p>
+            <div class="container01">
+                <label>表示するファイルを選択してください</label>
+                <div class="container02">
+                    <input type="file" id="fileInput" accept=".xlsx, .xls"/>
+                </div>
+            </div>
+            <div class="container01">
+                <label>表示するY軸の範囲を選択してください</label>
+                <div>
+                    <input type="number" id="Ymin" value="0" step="1">
+                    〜
+                    <input type="number" id="Ymax" value="40" step="1">
+                    <button type="button" id="display">表示</button>
+                </div>
+            </div>
+            
+            <!--<p>Y軸高さの設定</p>
+            <input type="number" id="number1" value="40" />-->
+            <div class="canvas-container">
+                <canvas id="myChart1"></canvas>
+            </div>
+            <div class="canvas-container">
+                <canvas id="myChart2"></canvas>
+            </div>
+            <div class="canvas-container">
+                <canvas id="myChart3"></canvas>
+            </div>
+            
         </div>
     
         <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="script.js"></script>
     </body>

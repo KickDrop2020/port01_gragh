@@ -1,5 +1,12 @@
+.logo {
+    background-color: blue;
+    color: #fff;
+    text-shadow: #000 2px 2px 0.2rem;
+    height: 3.5rem;
+}
+
 body {
-    background-color: #fff;
+    background-color: skyblue;
     color: blue;
     font-family: 'Arial', sans-serif;
     text-align: center;
@@ -8,17 +15,16 @@ body {
 .container {
     margin-top: 50px;
 }
-.explanation {
+.container01 {
     color: black;
+}
+.container02 {
+    border-color: black;
 }
 
 canvas {
-    /*max-width: 600px;*/
-    width: 60rem;
-    margin: 20px auto;
-    height: 60rem;
+    /*margin: 0rem auto;*/
     background-color: #fff;
-    display: block;
     border: ridge #ccc;
     border-width: 6px;
 }
@@ -27,4 +33,13 @@ input[type="file"] {
     margin-bottom: 20px;
     color: blue;
     font-size: 20px;
+}
+
+.canvas-container {
+    margin: 0rem auto;
+    position: relative;
+    width:  65rem;
+    height: 33rem;
+    overflow: hidden;
+    /*margin:20px;*/
 }
